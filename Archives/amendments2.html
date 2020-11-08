@@ -1,0 +1,1213 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Activitar Template">
+    <meta name="keywords" content="Activitar, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Activitar | Template</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/elegant-icons.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/nice-select.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/slicknav.min.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
+</head>
+
+<body>
+<!-- Page Preloder -->
+<div id="preloder">
+    <div class="loader"></div>
+</div>
+
+<!-- Header Section Begin -->
+<header class="header-section header-normal">
+    <div class="container-fluid">
+        <div class="logo">
+            <a href="/">
+                <img src="{{ url_for('static', filename='img/bxboyslogo.png') }}" alt="" width="100%" height="100%">
+            </a>
+        </div>
+        <!--<div class="top-social">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='img/filler.png') }}" alt="" width="100%"
+                     height="100%">
+            </div>
+        </div>-->
+        <!--<div class="top-social">
+            <a href="#"><i class="fa fa-pinterest-p"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-pinterest-p"></i></a>
+            <a href="#"><i class="fa fa-youtube-play"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>-->
+        <div class="container">
+            <div class="nav-menu">
+                <nav class="mainmenu mobile-menu">
+                    <ul>
+                        <!--<li><a href="/tests">Test</a></li>-->
+                        <li><a href="/bylaws">By Laws</a></li>
+                        <li><a href="/freeparking">Free Parking</a></li>
+                        <li><a href="/draft">2020 Draft</a></li>
+                        <li><a href="/stats.html">Stats</a>
+                            <ul class="dropdown">
+                                <li><a href="/lifetime_stats">Lifetime Stats</a></li>
+                                <li><a href="/matchup_analytics">Matchup Analytics</a></li>
+                                <li><a href="/historic_game_log">Historic Game Log</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/contact.html">Gallery</a></li>
+                        <li><a href="./contact.html">Chugs</a></li>
+                        <li><a href="./contact.html">Trash Talk</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div id="mobile-menu-wrap"></div>
+    </div>
+</header>
+<!-- Header End -->
+
+<!-- Breadcrumb Section Begin -->
+<section class="breadcrumb-section set-bg spad" data-setbg="{{ url_for('static', filename='img/bylaws.jpg') }}">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcrumb-text">
+                    <h2>Bylaws</h2>
+                    <!--<div class="breadcrumb-controls">
+                        <a href="#"><i class="fa fa-home"></i> Home</a>
+                        <span>About Us</span>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Breadcrumb End -->
+
+<!-- Aboutus Section Begin -->
+<!--<section class="aboutus-section spad">
+    <div class="class-title">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="section-title">
+                        <h2>2019 Bylaws</h2>
+                        <p>2020 amendments further below</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="aboutus-page-text">
+            <div class="row">
+                <div class="col-xl-9 col-lg-10 m-auto">
+                <div class="section-title">
+                    <h2>2019 Rules</h2>
+                    <p>CrossFit is a cutting-edge functional fitness system that can help everyday men. There is
+                        a significant portion of the population here in North America, that actually want
+                        and need success to be hard!</p>
+                </div>
+            </div>
+        </div>
+            <img src="{{ url_for('static', filename='img/about-us.jpg') }}" alt="">
+            <div class="row">
+
+                <div class="col-lg-6">
+                    <div class="about-us">
+                        <h4>Toilet Bowl Home Field Advantage</h4>
+                        <p>The home field advantage points will alternate for the 3 game Toilet Bowl series</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-us">
+                        <h4>Buy In</h4>
+                        <p>Buy-in is $175 and locked in for the 2019 and 2020 seasons</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-us">
+                        <h4>Division Structure</h4>
+                        <p>1 large division</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-us">
+                        <h4>Toilet Bowl Teams</h4>
+                        <p>Lowest four W-L (PF tie breaker) go to the Toilet Bowl</p>
+                        <p>Passed in 2018 with the caveat that the 2018 punishments are locked in the for the next four
+                            seasons, 2019, 2020, 2021, 2020</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-us">
+                        <h4>QB Scoring</h4>
+                        <p>6 pts for touchdown (was 4)</p>
+                        <p>-3 for interception (was -2)</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-us">
+                        <h4>Treasurer</h4>
+                        <p>Foshage will collect dues, make payouts, and manage free parking</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-us">
+                        <h4>Weekly Loser Embarrassment</h4>
+                        <p>The Manager with the lowest score for each week must send a Group Me of
+                            them chugging a 12oz Smirnoff Ice to the other League Managers
+                            (all chugs must be paid in within 3 weeks).
+                            If you fail to chug, you get an extra chug for week beyond the 3 week threshold</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-quality">
+                        <h4>Payouts</h4>
+                        <ul>
+                            <li><i class="fa fa-check-circle-o"></i>1st Place: $1000</li>
+                            <li><i class="fa fa-check-circle-o"></i>2nd Place: $435</li>
+                            <li><i class="fa fa-check-circle-o"></i>2nd Place: $175</li>
+                            <li><i class="fa fa-check-circle-o"></i>Free Parking: $80 (16 weeks x $5)</li>
+                            <li><i class="fa fa-check-circle-o"></i>Highest Total PFs for Regular Season: $60</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>-->
+<!-- Aboutus Section End -->
+
+<!-- Classes Section Begin -->
+<!--<section class="classes-section schedule-page">
+    <div class="class-title">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="section-title">
+                        <h2>Punishments</h2>
+                        <p>Don't play to win, but play to not lose</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="classes-item set-bg"
+                     data-setbg="{{ url_for('static', filename='img/classes/host.jpg') }}">
+                    <h4>Host & Dinner</h4>
+                    <p>Loser of the Toilet Bowl hosts next year’s draft party, host discretion on location. DO IT RIGHT!
+                        Loser of the Toilet Bowl should provide a nice dinner (steak, don’t be a dick).
+                        Also must supply drinks for Managers while at host location</p>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="classes-item set-bg"
+                     data-setbg="{{ url_for('static', filename='img/classes/bar.jpg') }}">
+                    <h4>Bar Tab</h4>
+                    <p>Loser covers $200 bar tab</p>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="classes-item set-bg"
+                     data-setbg="{{ url_for('static', filename='img/classes/costume.jpg') }}">
+                    <h4>Costume</h4>
+                    <p>The Toilet Bowl loser will wear a costume for one evening `at the bars that the other Managers
+                        select</p>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="classes-item set-bg"
+                     data-setbg="{{ url_for('static', filename='img/classes/haircut.jpg') }}">
+                    <h4>Haircut (Or $540 Fine)</h4>
+                    <p>Loser gets a haircut from the League, OR pays out $60 a person to the other 9 Managers</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>-->
+<!-- Classes Section End -->
+
+<!-- Testimonial Section End -->
+<!--<section class="testimonial-section set-bg spad" data-setbg="{{ url_for('static', filename='img/testimonial-bg.jpg') }}">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+                <div class="testimonial-slider owl-carousel">
+                    <div class="ts-item">
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <h4>The “Minimal-Repair Technique” is a revolutionary surgical procedure in the treatment
+                            for hernia. Initially intended for correcting inguinal hernia.</h4>
+                        <div class="author-name">
+                            <h5>Stacy Mc Neeley</h5>
+                            <span>CEP’s Director</span>
+                        </div>
+                        <div class="author-pic">
+                            <img src="{{ url_for('static', filename='img/author-pic.png') }}" alt="">
+                        </div>
+                    </div>
+                    <div class="ts-item">
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <h4>The “Minimal-Repair Technique” is a revolutionary surgical procedure in the treatment
+                            for hernia. Initially intended for correcting inguinal hernia.</h4>
+                        <div class="author-name">
+                            <h5>Stacy Mc Neelek</h5>
+                            <span>CEP’s Director</span>
+                        </div>
+                        <div class="author-pic">
+                            <img src="{{ url_for('static', filename='img/author-pic.png') }}" alt="">
+                        </div>
+                    </div>
+                    <div class="ts-item">
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <h4>The “Minimal-Repair Technique” is a revolutionary surgical procedure in the treatment
+                            for hernia. Initially intended for correcting inguinal hernia.</h4>
+                        <div class="author-name">
+                            <h5>Stacy Mc Neelel</h5>
+                            <span>CEP’s Director</span>
+                        </div>
+                        <div class="author-pic">
+                            <img src="{{ url_for('static', filename='img/author-pic.png') }}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>-->
+<!-- Testimonial Section End -->
+
+<!-- Trainer Section Begin -->
+<!--<section class="trainer-section spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title">
+                    <h2>D'EM BX BOYS</h2>
+                    <p>May god help your souls</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-sm-6">
+                <div class="trainer-item">
+                    <div class="ti-pic">
+                        <img src="{{ url_for('static', filename='img/trainer/ben.jpg') }}" alt="">
+                        <div class="trainer-text">
+                            <h5>Ben <span>- Manager</span></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="trainer-item">
+                    <div class="ti-pic">
+                        <img src="{{ url_for('static', filename='img/trainer/max.jpg') }}" alt="">
+                        <div class="trainer-text">
+                            <h5>Max <span>- Manager</span></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="trainer-item">
+                    <div class="ti-pic">
+                        <img src="{{ url_for('static', filename='img/trainer/fos.jpg') }}" alt="">
+                        <div class="trainer-text">
+                            <h5>Fos <span>- Manager</span></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="trainer-item">
+                    <div class="ti-pic">
+                        <img src="{{ url_for('static', filename='img/trainer/hacker.jpg') }}" alt="">
+                        <div class="trainer-text">
+                            <h5>Hacker <span>- Manager</span></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="trainer-item">
+                    <div class="ti-pic">
+                        <img src="{{ url_for('static', filename='img/trainer/gwinn.jpg') }}" alt="">
+                        <div class="trainer-text">
+                            <h5>Gwinn <span>- Manager</span></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="trainer-item">
+                    <div class="ti-pic">
+                        <img src="{{ url_for('static', filename='img/trainer/dj.jpg') }}" alt="">
+                        <div class="trainer-text">
+                            <h5>DJ Radio <span>- Manager</span></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="trainer-item">
+                    <div class="ti-pic">
+                        <img src="{{ url_for('static', filename='img/trainer/chris.jpg') }}" alt="">
+                        <div class="trainer-text">
+                            <h5>Chris <span>- Manager</span></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="trainer-item">
+                    <div class="ti-pic">
+                        <img src="{{ url_for('static', filename='img/trainer/nate.jpg') }}" alt="">
+                        <div class="trainer-text">
+                            <h5>Nate <span>- Comish</span></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="trainer-item">
+                    <div class="ti-pic">
+                        <img src="{{ url_for('static', filename='img/trainer/tom.jpg') }}" alt="">
+                        <div class="trainer-text">
+                            <h5>Tom <span>- Manager</span></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="trainer-item">
+                    <div class="ti-pic">
+                        <img src="{{ url_for('static', filename='img/trainer/Peaches.jpg') }}" alt="">
+                        <div class="trainer-text">
+                            <h5>Peaches <span>- Manager</span></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>-->
+<!-- Trainer Section End -->
+
+<!-- Cta Section Begin -->
+<!--<section class="cta-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="cta-text">
+                    <h3>GeT Started Today</h3>
+                    <p>New student special! $30 unlimited Gym for the first week anh 50% of our member!</p>
+                </div>
+                <a href="#" class="primary-btn cta-btn">book now</a>
+            </div>
+        </div>
+    </div>
+</section>-->
+<!-- Cta Section End -->
+
+<!-- Bylaw Amendment Section Begin -->
+<section class="trainer-section spad">
+    <div class="wrapper-editor">
+
+        <div class="block my-4">
+            <div class="d-flex justify-content-center">
+                <p class="h5 text-primary createShowP">0 row selected</p>
+            </div>
+        </div>
+
+        <div class="row d-flex justify-content-center modalWrapper">
+            <div class="modal fade addNewInputs" id="modalAdd" tabindex="-1" role="dialog" aria-labelledby="modalAdd"
+                 aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header text-center">
+                            <h4 class="modal-title w-100 font-weight-bold text-primary ml-5">Add new form</h4>
+                            <button type="button" class="close text-primary" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body mx-3">
+                            <div class="md-form mb-5">
+                                <input type="text" id="inputName" class="form-control validate">
+                                <label data-error="wrong" data-success="right" for="inputName">Name</label>
+                            </div>
+
+                            <div class="md-form mb-5">
+                                <input type="text" id="inputPosition" class="form-control validate">
+                                <label data-error="wrong" data-success="right" for="inputPosition">Position</label>
+                            </div>
+
+                            <div class="md-form mb-5">
+                                <input type="text" id="inputOfficeInput" class="form-control validate">
+                                <label data-error="wrong" data-success="right" for="inputOfficeInput">Office</label>
+                            </div>
+
+                            <div class="md-form mb-5">
+                                <input type="text" id="inputAge" class="form-control validate">
+                                <label data-error="wrong" data-success="right" for="inputAge">Age</label>
+                            </div>
+
+                            <div class="md-form mb-5">
+                                <input type="date" id="inputDate" class="form-control" placeholder="Select Date">
+                                <label data-error="wrong" data-success="right" for="inputDate"></label>
+                            </div>
+
+                            <div class="md-form mb-5">
+                                <input type="text" id="inputSalary" class="form-control validate">
+                                <label data-error="wrong" data-success="right" for="inputSalary">Salary</label>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer d-flex justify-content-center buttonAddFormWrapper">
+                            <button class="btn btn-outline-primary btn-block buttonAdd" data-dismiss="modal">Add form
+                                <i class="fas fa-paper-plane-o ml-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <a href="" class="btn btn-info btn-rounded btn-sm" data-toggle="modal" data-target="#modalAdd">Add<i
+                        class="fas fa-plus-square ml-1"></i></a>
+            </div>
+
+            <div class="modal fade modalEditClass" id="modalEdit" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header text-center">
+                            <h4 class="modal-title w-100 font-weight-bold text-secondary ml-5">Edit form</h4>
+                            <button type="button" class="close text-secondary" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body mx-3">
+                            <div class="md-form mb-5">
+                                <input type="text" id="formNameEdit" class="form-control validate">
+                                <label data-error="wrong" data-success="right" for="formNameEdit">Name</label>
+                            </div>
+
+                            <div class="md-form mb-5">
+                                <input type="text" id="formPositionEdit" class="form-control validate">
+                                <label data-error="wrong" data-success="right" for="formPositionEdit">Position</label>
+                            </div>
+
+                            <div class="md-form mb-5">
+                                <input type="text" id="formOfficeEdit" class="form-control validate">
+                                <label data-error="wrong" data-success="right" for="formOfficeEdit">Office</label>
+                            </div>
+
+                            <div class="md-form mb-5">
+                                <input type="text" id="formAgeEdit" class="form-control validate">
+                                <label data-error="wrong" data-success="right" for="formAgeEdit">Age</label>
+                            </div>
+
+                            <div class="md-form mb-5">
+                                <input type="text" id="formDateEdit" class="form-control datepicker">
+                                <label data-error="wrong" data-success="right" for="formDateEdit">Date</label>
+                            </div>
+
+                            <div class="md-form mb-5">
+                                <input type="text" id="formSalaryEdit" class="form-control validate">
+                                <label data-error="wrong" data-success="right" for="formSalaryEdit">Salary</label>
+                            </div>
+
+
+                        </div>
+                        <div class="modal-footer d-flex justify-content-center editInsideWrapper">
+                            <button class="btn btn-outline-secondary btn-block editInside" data-dismiss="modal">Edit
+                                form
+                                <i class="fas fa-paper-plane-o ml-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center buttonEditWrapper">
+                <button class="btn btn-info btn-rounded btn-sm buttonEdit" data-toggle="modal" data-target="#modalEdit"
+                        disabled>Edit<i class="fas fa-pencil-square-o ml-1"></i></a></button>
+            </div>
+
+            <div class="modal fade" id="modalDelete" tabindex="-1" role="dialog" aria-labelledby="modalDelete"
+                 aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header text-center">
+                            <h4 class="modal-title w-100 font-weight-bold ml-5 text-danger">Delete</h4>
+                            <button type="button" class="close text-danger" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body mx-3">
+                            <p class="text-center h4">Are you sure to delete selected row?</p>
+
+                        </div>
+                        <div class="modal-footer d-flex justify-content-center deleteButtonsWrapper">
+                            <button type="button" class="btn btn-danger btnYesClass" id="btnYes" data-dismiss="modal">
+                                Yes
+                            </button>
+                            <button type="button" class="btn btn-primary btnNoClass" id="btnNo" data-dismiss="modal">
+                                No
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <button class="btn btn-danger btn-sm btn-rounded buttonDelete" data-toggle="modal" disabled
+                        data-target="#modalDelete"
+                        disabled>Delete<i class="fas fa-times ml-1"></i></a></button>
+            </div>
+        </div>
+
+        <table id="dtBasicExample" class="table table-striped table-bordered" cellspacing="0" width="100%">
+            <thead>
+            <tr>
+                <th class="th-sm">Name
+
+                </th>
+                <th class="th-sm">Position
+
+                </th>
+                <th class="th-sm">Office
+
+                </th>
+                <th class="th-sm">Age
+
+                </th>
+                <th class="th-sm">Start date
+
+                </th>
+                <th class="th-sm">Salary
+
+                </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Tiger Nixon</td>
+                <td>System Architect</td>
+                <td>Edinburgh</td>
+                <td>61</td>
+                <td>2011/04/25</td>
+                <td>$320,800</td>
+            </tr>
+            <tr>
+                <td>Garrett Winters</td>
+                <td>Accountant</td>
+                <td>Tokyo</td>
+                <td>63</td>
+                <td>2011/07/25</td>
+                <td>$170,750</td>
+            </tr>
+            <tr>
+                <td>Ashton Cox</td>
+                <td>Junior Technical Author</td>
+                <td>San Francisco</td>
+                <td>66</td>
+                <td>2009/01/12</td>
+                <td>$86,000</td>
+            </tr>
+            <tr>
+                <td>Cedric Kelly</td>
+                <td>Senior Javascript Developer</td>
+                <td>Edinburgh</td>
+                <td>22</td>
+                <td>2012/03/29</td>
+                <td>$433,060</td>
+            </tr>
+            <tr>
+                <td>Airi Satou</td>
+                <td>Accountant</td>
+                <td>Tokyo</td>
+                <td>33</td>
+                <td>2008/11/28</td>
+                <td>$162,700</td>
+            </tr>
+            <tr>
+                <td>Brielle Williamson</td>
+                <td>Integration Specialist</td>
+                <td>New York</td>
+                <td>61</td>
+                <td>2012/12/02</td>
+                <td>$372,000</td>
+            </tr>
+            <tr>
+                <td>Herrod Chandler</td>
+                <td>Sales Assistant</td>
+                <td>San Francisco</td>
+                <td>59</td>
+                <td>2012/08/06</td>
+                <td>$137,500</td>
+            </tr>
+            <tr>
+                <td>Rhona Davidson</td>
+                <td>Integration Specialist</td>
+                <td>Tokyo</td>
+                <td>55</td>
+                <td>2010/10/14</td>
+                <td>$327,900</td>
+            </tr>
+            <tr>
+                <td>Colleen Hurst</td>
+                <td>Javascript Developer</td>
+                <td>San Francisco</td>
+                <td>39</td>
+                <td>2009/09/15</td>
+                <td>$205,500</td>
+            </tr>
+            <tr>
+                <td>Sonya Frost</td>
+                <td>Software Engineer</td>
+                <td>Edinburgh</td>
+                <td>23</td>
+                <td>2008/12/13</td>
+                <td>$103,600</td>
+            </tr>
+            <tr>
+                <td>Jena Gaines</td>
+                <td>Office Manager</td>
+                <td>London</td>
+                <td>30</td>
+                <td>2008/12/19</td>
+                <td>$90,560</td>
+            </tr>
+            <tr>
+                <td>Quinn Flynn</td>
+                <td>Support Lead</td>
+                <td>Edinburgh</td>
+                <td>22</td>
+                <td>2013/03/03</td>
+                <td>$342,000</td>
+            </tr>
+            <tr>
+                <td>Charde Marshall</td>
+                <td>Regional Director</td>
+                <td>San Francisco</td>
+                <td>36</td>
+                <td>2008/10/16</td>
+                <td>$470,600</td>
+            </tr>
+            <tr>
+                <td>Haley Kennedy</td>
+                <td>Senior Marketing Designer</td>
+                <td>London</td>
+                <td>43</td>
+                <td>2012/12/18</td>
+                <td>$313,500</td>
+            </tr>
+            <tr>
+                <td>Tatyana Fitzpatrick</td>
+                <td>Regional Director</td>
+                <td>London</td>
+                <td>19</td>
+                <td>2010/03/17</td>
+                <td>$385,750</td>
+            </tr>
+            <tr>
+                <td>Michael Silva</td>
+                <td>Marketing Designer</td>
+                <td>London</td>
+                <td>66</td>
+                <td>2012/11/27</td>
+                <td>$198,500</td>
+            </tr>
+            <tr>
+                <td>Paul Byrd</td>
+                <td>Chief Financial Officer (CFO)</td>
+                <td>New York</td>
+                <td>64</td>
+                <td>2010/06/09</td>
+                <td>$725,000</td>
+            </tr>
+            <tr>
+                <td>Gloria Little</td>
+                <td>Systems Administrator</td>
+                <td>New York</td>
+                <td>59</td>
+                <td>2009/04/10</td>
+                <td>$237,500</td>
+            </tr>
+            <tr>
+                <td>Bradley Greer</td>
+                <td>Software Engineer</td>
+                <td>London</td>
+                <td>41</td>
+                <td>2012/10/13</td>
+                <td>$132,000</td>
+            </tr>
+            <tr>
+                <td>Dai Rios</td>
+                <td>Personnel Lead</td>
+                <td>Edinburgh</td>
+                <td>35</td>
+                <td>2012/09/26</td>
+                <td>$217,500</td>
+            </tr>
+            <tr>
+                <td>Jenette Caldwell</td>
+                <td>Development Lead</td>
+                <td>New York</td>
+                <td>30</td>
+                <td>2011/09/03</td>
+                <td>$345,000</td>
+            </tr>
+            <tr>
+                <td>Yuri Berry</td>
+                <td>Chief Marketing Officer (CMO)</td>
+                <td>New York</td>
+                <td>40</td>
+                <td>2009/06/25</td>
+                <td>$675,000</td>
+            </tr>
+            <tr>
+                <td>Caesar Vance</td>
+                <td>Pre-Sales Support</td>
+                <td>New York</td>
+                <td>21</td>
+                <td>2011/12/12</td>
+                <td>$106,450</td>
+            </tr>
+            <tr>
+                <td>Doris Wilder</td>
+                <td>Sales Assistant</td>
+                <td>Sidney</td>
+                <td>23</td>
+                <td>2010/09/20</td>
+                <td>$85,600</td>
+            </tr>
+            <tr>
+                <td>Angelica Ramos</td>
+                <td>Chief Executive Officer (CEO)</td>
+                <td>London</td>
+                <td>47</td>
+                <td>2009/10/09</td>
+                <td>$1,200,000</td>
+            </tr>
+            <tr>
+                <td>Gavin Joyce</td>
+                <td>Developer</td>
+                <td>Edinburgh</td>
+                <td>42</td>
+                <td>2010/12/22</td>
+                <td>$92,575</td>
+            </tr>
+            <tr>
+                <td>Jennifer Chang</td>
+                <td>Regional Director</td>
+                <td>Singapore</td>
+                <td>28</td>
+                <td>2010/11/14</td>
+                <td>$357,650</td>
+            </tr>
+            <tr>
+                <td>Brenden Wagner</td>
+                <td>Software Engineer</td>
+                <td>San Francisco</td>
+                <td>28</td>
+                <td>2011/06/07</td>
+                <td>$206,850</td>
+            </tr>
+            <tr>
+                <td>Fiona Green</td>
+                <td>Chief Operating Officer (COO)</td>
+                <td>San Francisco</td>
+                <td>48</td>
+                <td>2010/03/11</td>
+                <td>$850,000</td>
+            </tr>
+            <tr>
+                <td>Shou Itou</td>
+                <td>Regional Marketing</td>
+                <td>Tokyo</td>
+                <td>20</td>
+                <td>2011/08/14</td>
+                <td>$163,000</td>
+            </tr>
+            <tr>
+                <td>Michelle House</td>
+                <td>Integration Specialist</td>
+                <td>Sidney</td>
+                <td>37</td>
+                <td>2011/06/02</td>
+                <td>$95,400</td>
+            </tr>
+            <tr>
+                <td>Suki Burks</td>
+                <td>Developer</td>
+                <td>London</td>
+                <td>53</td>
+                <td>2009/10/22</td>
+                <td>$114,500</td>
+            </tr>
+            <tr>
+                <td>Prescott Bartlett</td>
+                <td>Technical Author</td>
+                <td>London</td>
+                <td>27</td>
+                <td>2011/05/07</td>
+                <td>$145,000</td>
+            </tr>
+            <tr>
+                <td>Gavin Cortez</td>
+                <td>Team Leader</td>
+                <td>San Francisco</td>
+                <td>22</td>
+                <td>2008/10/26</td>
+                <td>$235,500</td>
+            </tr>
+            <tr>
+                <td>Martena Mccray</td>
+                <td>Post-Sales support</td>
+                <td>Edinburgh</td>
+                <td>46</td>
+                <td>2011/03/09</td>
+                <td>$324,050</td>
+            </tr>
+            <tr>
+                <td>Unity Butler</td>
+                <td>Marketing Designer</td>
+                <td>San Francisco</td>
+                <td>47</td>
+                <td>2009/12/09</td>
+                <td>$85,675</td>
+            </tr>
+            <tr>
+                <td>Howard Hatfield</td>
+                <td>Office Manager</td>
+                <td>San Francisco</td>
+                <td>51</td>
+                <td>2008/12/16</td>
+                <td>$164,500</td>
+            </tr>
+            <tr>
+                <td>Hope Fuentes</td>
+                <td>Secretary</td>
+                <td>San Francisco</td>
+                <td>41</td>
+                <td>2010/02/12</td>
+                <td>$109,850</td>
+            </tr>
+            <tr>
+                <td>Vivian Harrell</td>
+                <td>Financial Controller</td>
+                <td>San Francisco</td>
+                <td>62</td>
+                <td>2009/02/14</td>
+                <td>$452,500</td>
+            </tr>
+            <tr>
+                <td>Timothy Mooney</td>
+                <td>Office Manager</td>
+                <td>London</td>
+                <td>37</td>
+                <td>2008/12/11</td>
+                <td>$136,200</td>
+            </tr>
+            <tr>
+                <td>Jackson Bradshaw</td>
+                <td>Director</td>
+                <td>New York</td>
+                <td>65</td>
+                <td>2008/09/26</td>
+                <td>$645,750</td>
+            </tr>
+            <tr>
+                <td>Olivia Liang</td>
+                <td>Support Engineer</td>
+                <td>Singapore</td>
+                <td>64</td>
+                <td>2011/02/03</td>
+                <td>$234,500</td>
+            </tr>
+            <tr>
+                <td>Bruno Nash</td>
+                <td>Software Engineer</td>
+                <td>London</td>
+                <td>38</td>
+                <td>2011/05/03</td>
+                <td>$163,500</td>
+            </tr>
+            <tr>
+                <td>Sakura Yamamoto</td>
+                <td>Support Engineer</td>
+                <td>Tokyo</td>
+                <td>37</td>
+                <td>2009/08/19</td>
+                <td>$139,575</td>
+            </tr>
+            <tr>
+                <td>Thor Walton</td>
+                <td>Developer</td>
+                <td>New York</td>
+                <td>61</td>
+                <td>2013/08/11</td>
+                <td>$98,540</td>
+            </tr>
+            <tr>
+                <td>Finn Camacho</td>
+                <td>Support Engineer</td>
+                <td>San Francisco</td>
+                <td>47</td>
+                <td>2009/07/07</td>
+                <td>$87,500</td>
+            </tr>
+            <tr>
+                <td>Serge Baldwin</td>
+                <td>Data Coordinator</td>
+                <td>Singapore</td>
+                <td>64</td>
+                <td>2012/04/09</td>
+                <td>$138,575</td>
+            </tr>
+            <tr>
+                <td>Zenaida Frank</td>
+                <td>Software Engineer</td>
+                <td>New York</td>
+                <td>63</td>
+                <td>2010/01/04</td>
+                <td>$125,250</td>
+            </tr>
+            <tr>
+                <td>Zorita Serrano</td>
+                <td>Software Engineer</td>
+                <td>San Francisco</td>
+                <td>56</td>
+                <td>2012/06/01</td>
+                <td>$115,000</td>
+            </tr>
+            <tr>
+                <td>Jennifer Acosta</td>
+                <td>Junior Javascript Developer</td>
+                <td>Edinburgh</td>
+                <td>43</td>
+                <td>2013/02/01</td>
+                <td>$75,650</td>
+            </tr>
+            <tr>
+                <td>Cara Stevens</td>
+                <td>Sales Assistant</td>
+                <td>New York</td>
+                <td>46</td>
+                <td>2011/12/06</td>
+                <td>$145,600</td>
+            </tr>
+            <tr>
+                <td>Hermione Butler</td>
+                <td>Regional Director</td>
+                <td>London</td>
+                <td>47</td>
+                <td>2011/03/21</td>
+                <td>$356,250</td>
+            </tr>
+            <tr>
+                <td>Lael Greer</td>
+                <td>Systems Administrator</td>
+                <td>London</td>
+                <td>21</td>
+                <td>2009/02/27</td>
+                <td>$103,500</td>
+            </tr>
+            <tr>
+                <td>Jonas Alexander</td>
+                <td>Developer</td>
+                <td>San Francisco</td>
+                <td>30</td>
+                <td>2010/07/14</td>
+                <td>$86,500</td>
+            </tr>
+            <tr>
+                <td>Shad Decker</td>
+                <td>Regional Director</td>
+                <td>Edinburgh</td>
+                <td>51</td>
+                <td>2008/11/13</td>
+                <td>$183,000</td>
+            </tr>
+            <tr>
+                <td>Michael Bruce</td>
+                <td>Javascript Developer</td>
+                <td>Singapore</td>
+                <td>29</td>
+                <td>2011/06/27</td>
+                <td>$183,000</td>
+            </tr>
+            <tr>
+                <td>Donna Snider</td>
+                <td>Customer Support</td>
+                <td>New York</td>
+                <td>27</td>
+                <td>2011/01/25</td>
+                <td>$112,000</td>
+            </tr>
+            </tbody>
+            <tfoot>
+            <tr>
+                <th>Name
+                </th>
+                <th>Position
+                </th>
+                <th>Office
+                </th>
+                <th>Age
+                </th>
+                <th>Start date
+                </th>
+                <th>Salary
+                </th>
+            </tr>
+            </tfoot>
+        </table>
+    </div>
+</section>
+<!-- Bylaw Amendment Section End -->
+
+<!-- Footer Section Begin -->
+<footer class="footer-section">
+    <!--<div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="footer-logo-item">
+                    <div class="f-logo">
+                        <a href="#"><img src="{{ url_for('static', filename='img/logo.png') }}" alt=""></a>
+                    </div>
+                    <p>Despite growth of the Internet over the past seven years, the use of toll-free phone numbers
+                        in television advertising continues.</p>
+                    <div class="social-links">
+                        <h6>Follow us</h6>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 offset-lg-1">
+                <div class="footer-widget">
+                    <h5>Our Blog</h5>
+                    <div class="footer-blog">
+                        <a href="#" class="fb-item">
+                            <h6>Most people who work</h6>
+                            <span class="blog-time"><i class="fa fa-clock-o"></i> Jan 02, 2019</span>
+                        </a>
+                        <a href="#" class="fb-item">
+                            <h6>Freelance Design Tricks How </h6>
+                            <span class="blog-time"><i class="fa fa-clock-o"></i> Jan 02, 2019</span>
+                        </a>
+                        <a href="#" class="fb-item">
+                            <h6>have a computer at home have had </h6>
+                            <span class="blog-time"><i class="fa fa-clock-o"></i> Jan 02, 2019</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <div class="footer-widget">
+                    <h5>Program</h5>
+                    <ul class="workout-program">
+                        <li><a href="#">Bodybuilding</a></li>
+                        <li><a href="#">Running</a></li>
+                        <li><a href="#">Streching</a></li>
+                        <li><a href="#">Weight Loss</a></li>
+                        <li><a href="#">Gym Fitness</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="footer-widget">
+                    <h5>Get Info</h5>
+                    <ul class="footer-info">
+                        <li>
+                            <i class="fa fa-phone"></i>
+                            <span>Phone:</span>
+                            (12) 345 6789
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope-o"></i>
+                            <span>Email:</span>
+                            Colorlib.info@gmail.com
+                        </li>
+                        <li>
+                            <i class="fa fa-map-marker"></i>
+                            <span>Address</span>
+                            Iris Watson, Box 283 8562, NY
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>-->
+    <div class="copyright-text">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="ct-inside">
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+                        All rights reserved | This template is made with <i class="fa fa-heart-o"
+                                                                            aria-hidden="true"></i> by <a
+                            href="https://colorlib.com" target="_blank">Colorlib</a>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer Section End -->
+
+<!-- Js Plugins -->
+<script src="{{ url_for('static', filename='js/jquery-3.3.1.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.magnific-popup.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/mixitup.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.nice-select.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.slicknav.js') }}"></script>
+<script src="{{ url_for('static', filename='js/owl.carousel.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/masonry.pkgd.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+<script src="{{ url_for('static', filename='js/mdbEditor.js') }}"></script>
+<script src="{{ url_for('static', filename='js/wrapperEditor.js') }}"></script>
+</body>
+
+</html>

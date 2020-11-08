@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Activitar Template">
+    <meta name="keywords" content="Activitar, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Activitar | Template</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/elegant-icons.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/nice-select.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/slicknav.min.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
+</head>
+
+<body>
+<!-- Page Preloder -->
+<div id="preloder">
+    <div class="loader"></div>
+</div>
+
+<!-- Header Section Begin -->
+<header class="header-section header-normal">
+    <div class="container-fluid">
+        <div class="logo">
+            <a href="/">
+                <img src="{{ url_for('static', filename='img/bxboyslogo.png') }}" alt="" width="100%" height="100%">
+            </a>
+        </div>
+        <!--<div class="top-social">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='img/filler.png') }}" alt="" width="100%"
+                     height="100%">
+            </div>
+        </div>-->
+        <!--<div class="top-social">
+            <a href="#"><i class="fa fa-pinterest-p"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-pinterest-p"></i></a>
+            <a href="#"><i class="fa fa-youtube-play"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>-->
+        <div class="container">
+            <div class="nav-menu">
+                <nav class="mainmenu mobile-menu">
+                    <ul>
+                        <!--<li><a href="/tests">Test</a></li>-->
+                        <li><a href="/bylaws">By Laws</a></li>
+                        <li><a href="/freeparking">Free Parking</a></li>
+                        <li><a href="/draft">2020 Draft</a></li>
+                        <li><a href="/stats.html">Stats</a>
+                            <ul class="dropdown">
+                                <li><a href="/lifetime_stats">Lifetime Stats</a></li>
+                                <li><a href="/matchup_analytics">Matchup Analytics</a></li>
+                                <li><a href="/historic_game_log">Historic Game Log</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/contact.html">Gallery</a></li>
+                        <li><a href="./contact.html">Chugs</a></li>
+                        <li><a href="./contact.html">Trash Talk</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div id="mobile-menu-wrap"></div>
+    </div>
+</header>
+<!-- Header End -->
+
+<!-- Breadcrumb Section Begin -->
+<section class="breadcrumb-section set-bg spad" data-setbg="{{ url_for('static', filename='img/bylaws.jpg') }}">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcrumb-text">
+                    <h2>Bylaws</h2>
+                    <!--<div class="breadcrumb-controls">
+                        <a href="#"><i class="fa fa-home"></i> Home</a>
+                        <span>About Us</span>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Breadcrumb End -->
+
+<!-- Aboutus Section Begin -->
+<!--<section class="aboutus-section spad">
+    <div class="class-title">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="section-title">
+                        <h2>2019 Bylaws</h2>
+                        <p>2020 amendments further below</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="aboutus-page-text">
+            <div class="row">
+                <div class="col-xl-9 col-lg-10 m-auto">
+                <div class="section-title">
+                    <h2>2019 Rules</h2>
+                    <p>CrossFit is a cutting-edge functional fitness system that can help everyday men. There is
+                        a significant portion of the population here in North America, that actually want
+                        and need success to be hard!</p>
+                </div>
+            </div>
+        </div>
+            <img src="{{ url_for('static', filename='img/about-us.jpg') }}" alt="">
+            <div class="row">
+
+                <div class="col-lg-6">
+                    <div class="about-us">
+                        <h4>Toilet Bowl Home Field Advantage</h4>
+                        <p>The home field advantage points will alternate for the 3 game Toilet Bowl series</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-us">
+                        <h4>Buy In</h4>
+                        <p>Buy-in is $175 and locked in for the 2019 and 2020 seasons</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-us">
+                        <h4>Division Structure</h4>
+                        <p>1 large division</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-us">
+                        <h4>Toilet Bowl Teams</h4>
+                        <p>Lowest four W-L (PF tie breaker) go to the Toilet Bowl</p>
+                        <p>Passed in 2018 with the caveat that the 2018 punishments are locked in the for the next four
+                            seasons, 2019, 2020, 2021, 2020</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-us">
+                        <h4>QB Scoring</h4>
+                        <p>6 pts for touchdown (was 4)</p>
+                        <p>-3 for interception (was -2)</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-us">
+                        <h4>Treasurer</h4>
+                        <p>Foshage will collect dues, make payouts, and manage free parking</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-us">
+                        <h4>Weekly Loser Embarrassment</h4>
+                        <p>The Manager with the lowest score for each week must send a Group Me of
+                            them chugging a 12oz Smirnoff Ice to the other League Managers
+                            (all chugs must be paid in within 3 weeks).
+                            If you fail to chug, you get an extra chug for week beyond the 3 week threshold</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-quality">
+                        <h4>Payouts</h4>
+                        <ul>
+                            <li><i class="fa fa-check-circle-o"></i>1st Place: $1000</li>
+                            <li><i class="fa fa-check-circle-o"></i>2nd Place: $435</li>
+                            <li><i class="fa fa-check-circle-o"></i>2nd Place: $175</li>
+                            <li><i class="fa fa-check-circle-o"></i>Free Parking: $80 (16 weeks x $5)</li>
+                            <li><i class="fa fa-check-circle-o"></i>Highest Total PFs for Regular Season: $60</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>-->
+<!-- Aboutus Section End -->
+
+<!-- Classes Section Begin -->
+<!--<section class="classes-section schedule-page">
+    <div class="class-title">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="section-title">
+                        <h2>Punishments</h2>
+                        <p>Don't play to win, but play to not lose</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="classes-item set-bg"
+                     data-setbg="{{ url_for('static', filename='img/classes/host.jpg') }}">
+                    <h4>Host & Dinner</h4>
+                    <p>Loser of the Toilet Bowl hosts next year’s draft party, host discretion on location. DO IT RIGHT!
+                        Loser of the Toilet Bowl should provide a nice dinner (steak, don’t be a dick).
+                        Also must supply drinks for Managers while at host location</p>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="classes-item set-bg"
+                     data-setbg="{{ url_for('static', filename='img/classes/bar.jpg') }}">
+                    <h4>Bar Tab</h4>
+                    <p>Loser covers $200 bar tab</p>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="classes-item set-bg"
+                     data-setbg="{{ url_for('static', filename='img/classes/costume.jpg') }}">
+                    <h4>Costume</h4>
+                    <p>The Toilet Bowl loser will wear a costume for one evening `at the bars that the other Managers
+                        select</p>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="classes-item set-bg"
+                     data-setbg="{{ url_for('static', filename='img/classes/haircut.jpg') }}">
+                    <h4>Haircut (Or $540 Fine)</h4>
+                    <p>Loser gets a haircut from the League, OR pays out $60 a person to the other 9 Managers</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>-->
+<!-- Classes Section End -->
+
+<!-- Testimonial Section End -->
+<!--<section class="testimonial-section set-bg spad" data-setbg="{{ url_for('static', filename='img/testimonial-bg.jpg') }}">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+                <div class="testimonial-slider owl-carousel">
+                    <div class="ts-item">
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <h4>The “Minimal-Repair Technique” is a revolutionary surgical procedure in the treatment
+                            for hernia. Initially intended for correcting inguinal hernia.</h4>
+                        <div class="author-name">
+                            <h5>Stacy Mc Neeley</h5>
+                            <span>CEP’s Director</span>
+                        </div>
+                        <div class="author-pic">
+                            <img src="{{ url_for('static', filename='img/author-pic.png') }}" alt="">
+                        </div>
+                    </div>
+                    <div class="ts-item">
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <h4>The “Minimal-Repair Technique” is a revolutionary surgical procedure in the treatment
+                            for hernia. Initially intended for correcting inguinal hernia.</h4>
+                        <div class="author-name">
+                            <h5>Stacy Mc Neelek</h5>
+                            <span>CEP’s Director</span>
+                        </div>
+                        <div class="author-pic">
+                            <img src="{{ url_for('static', filename='img/author-pic.png') }}" alt="">
+                        </div>
+                    </div>
+                    <div class="ts-item">
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <h4>The “Minimal-Repair Technique” is a revolutionary surgical procedure in the treatment
+                            for hernia. Initially intended for correcting inguinal hernia.</h4>
+                        <div class="author-name">
+                            <h5>Stacy Mc Neelel</h5>
+                            <span>CEP’s Director</span>
+                        </div>
+                        <div class="author-pic">
+                            <img src="{{ url_for('static', filename='img/author-pic.png') }}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>-->
+<!-- Testimonial Section End -->
+
+<!-- Trainer Section Begin -->
+<!--<section class="trainer-section spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title">
+                    <h2>D'EM BX BOYS</h2>
+                    <p>May god help your souls</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-sm-6">
+                <div class="trainer-item">
+                    <div class="ti-pic">
+                        <img src="{{ url_for('static', filename='img/trainer/ben.jpg') }}" alt="">
+                        <div class="trainer-text">
+                            <h5>Ben <span>- Manager</span></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="trainer-item">
+                    <div class="ti-pic">
+                        <img src="{{ url_for('static', filename='img/trainer/max.jpg') }}" alt="">
+                        <div class="trainer-text">
+                            <h5>Max <span>- Manager</span></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="trainer-item">
+                    <div class="ti-pic">
+                        <img src="{{ url_for('static', filename='img/trainer/fos.jpg') }}" alt="">
+                        <div class="trainer-text">
+                            <h5>Fos <span>- Manager</span></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="trainer-item">
+                    <div class="ti-pic">
+                        <img src="{{ url_for('static', filename='img/trainer/hacker.jpg') }}" alt="">
+                        <div class="trainer-text">
+                            <h5>Hacker <span>- Manager</span></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="trainer-item">
+                    <div class="ti-pic">
+                        <img src="{{ url_for('static', filename='img/trainer/gwinn.jpg') }}" alt="">
+                        <div class="trainer-text">
+                            <h5>Gwinn <span>- Manager</span></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="trainer-item">
+                    <div class="ti-pic">
+                        <img src="{{ url_for('static', filename='img/trainer/dj.jpg') }}" alt="">
+                        <div class="trainer-text">
+                            <h5>DJ Radio <span>- Manager</span></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="trainer-item">
+                    <div class="ti-pic">
+                        <img src="{{ url_for('static', filename='img/trainer/chris.jpg') }}" alt="">
+                        <div class="trainer-text">
+                            <h5>Chris <span>- Manager</span></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="trainer-item">
+                    <div class="ti-pic">
+                        <img src="{{ url_for('static', filename='img/trainer/nate.jpg') }}" alt="">
+                        <div class="trainer-text">
+                            <h5>Nate <span>- Comish</span></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="trainer-item">
+                    <div class="ti-pic">
+                        <img src="{{ url_for('static', filename='img/trainer/tom.jpg') }}" alt="">
+                        <div class="trainer-text">
+                            <h5>Tom <span>- Manager</span></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="trainer-item">
+                    <div class="ti-pic">
+                        <img src="{{ url_for('static', filename='img/trainer/Peaches.jpg') }}" alt="">
+                        <div class="trainer-text">
+                            <h5>Peaches <span>- Manager</span></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>-->
+<!-- Trainer Section End -->
+
+<!-- Cta Section Begin -->
+<!--<section class="cta-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="cta-text">
+                    <h3>GeT Started Today</h3>
+                    <p>New student special! $30 unlimited Gym for the first week anh 50% of our member!</p>
+                </div>
+                <a href="#" class="primary-btn cta-btn">book now</a>
+            </div>
+        </div>
+    </div>
+</section>-->
+<!-- Cta Section End -->
+
+<!-- Bylaw Amendment Section Begin -->
+<section class="trainer-section spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title">
+                    <h2>2020 Proposals</h2>
+                    <div class="container">
+                        <div class="row">
+                            <table class="table table-bordered table-dark">
+                                <thead>
+                                <tr>
+                                    <th scope="col">Amendment Name</th>
+                                    <th scope="col">Manager Name</th>
+                                    <th scope="col">Proposal</th>
+                                    <th scope="col">Status</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                {% for item in data %}
+                                <tr>
+                                    <td>{{item[0]}}</td>
+                                    <td>{{item[1]}}</td>
+                                    <td>{{item[2]}}</td>
+                                    <td>{{item[3]}}</td>
+                                    <td>
+                                        <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                data-target=".bd-example-modal-lg_edit" id="edit{{item}}">Large modal
+                                        </button>
+                                    </td>
+                                </tr>
+                                <!-- Modal -->
+
+                                {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <br><br>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+-->
+<!-- Bylaw Amendment Section End -->
+
+<!-- Bylaw Amendment Section Begin -->
+<section class="trainer-section spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title">
+                    <h2>2020 Proposals</h2>
+                    <div class="container">
+                        <div class="row">
+                            <!-- Large modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                    data-target=".bd-example-modal-lg">Large modal
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
+                                 aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="leave-comment-form">
+                                            <p>Complete the form below for each proposal</p><br>
+                                            <form action="#" method="post">
+                                                <div class="row">
+                                                    <div class="container-fluid">
+                                                        <div class="col-lg-12">
+                                                            <input type="text" placeholder="Amendment Title"
+                                                                   name="amendmentTitle"
+                                                                   value="{{request.form.amendmentTitle}}">
+                                                        </div>
+                                                        <div class="col-lg-12">
+                                                            <input type="text" placeholder="Manager Name"
+                                                                   name="managerName"
+                                                                   value="{{request.form.managerName}}">
+                                                        </div>
+                                                        <div class="col-lg-12">
+                                                            <textarea placeholder="Proposed Amendment" name="amendment"
+                                                                      value="{{request.form.amendment}}"></textarea>
+                                                            <button type="submit" class="leave-btn">Post Comment
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Bylaw Amendment Section End -->
+
+<!-- Footer Section Begin -->
+<footer class="footer-section">
+    <!--<div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="footer-logo-item">
+                    <div class="f-logo">
+                        <a href="#"><img src="{{ url_for('static', filename='img/logo.png') }}" alt=""></a>
+                    </div>
+                    <p>Despite growth of the Internet over the past seven years, the use of toll-free phone numbers
+                        in television advertising continues.</p>
+                    <div class="social-links">
+                        <h6>Follow us</h6>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 offset-lg-1">
+                <div class="footer-widget">
+                    <h5>Our Blog</h5>
+                    <div class="footer-blog">
+                        <a href="#" class="fb-item">
+                            <h6>Most people who work</h6>
+                            <span class="blog-time"><i class="fa fa-clock-o"></i> Jan 02, 2019</span>
+                        </a>
+                        <a href="#" class="fb-item">
+                            <h6>Freelance Design Tricks How </h6>
+                            <span class="blog-time"><i class="fa fa-clock-o"></i> Jan 02, 2019</span>
+                        </a>
+                        <a href="#" class="fb-item">
+                            <h6>have a computer at home have had </h6>
+                            <span class="blog-time"><i class="fa fa-clock-o"></i> Jan 02, 2019</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <div class="footer-widget">
+                    <h5>Program</h5>
+                    <ul class="workout-program">
+                        <li><a href="#">Bodybuilding</a></li>
+                        <li><a href="#">Running</a></li>
+                        <li><a href="#">Streching</a></li>
+                        <li><a href="#">Weight Loss</a></li>
+                        <li><a href="#">Gym Fitness</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="footer-widget">
+                    <h5>Get Info</h5>
+                    <ul class="footer-info">
+                        <li>
+                            <i class="fa fa-phone"></i>
+                            <span>Phone:</span>
+                            (12) 345 6789
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope-o"></i>
+                            <span>Email:</span>
+                            Colorlib.info@gmail.com
+                        </li>
+                        <li>
+                            <i class="fa fa-map-marker"></i>
+                            <span>Address</span>
+                            Iris Watson, Box 283 8562, NY
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>-->
+    <div class="copyright-text">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="ct-inside">
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+                        All rights reserved | This template is made with <i class="fa fa-heart-o"
+                                                                            aria-hidden="true"></i> by <a
+                            href="https://colorlib.com" target="_blank">Colorlib</a>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer Section End -->
+
+<!-- Js Plugins -->
+<script src="{{ url_for('static', filename='js/jquery-3.3.1.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.magnific-popup.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/mixitup.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.nice-select.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.slicknav.js') }}"></script>
+<script src="{{ url_for('static', filename='js/owl.carousel.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/masonry.pkgd.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+
+</html>

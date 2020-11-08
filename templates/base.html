@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>D'EM BX BOYS</title>
+<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css"/>-->
+
+    <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700,800,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&display=swap" rel="stylesheet">
+
+    <!--    &lt;!&ndash; Css Styles &ndash;&gt;-->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" type="text/css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}" type="text/css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/elegant-icons.css') }}" type="text/css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/nice-select.css') }}" type="text/css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}" type="text/css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.css') }}" type="text/css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/slicknav.min.css') }}" type="text/css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
+</head>
+
+<body>
+
+<section class="hero is-primary is-fullheight">
+    <div class="hero-head">
+        <div class="navbar-end">
+            <!--            <a href="/hompage" class="navbar-item">-->
+            <!--                Homepage-->
+            <!--            </a>-->
+            {% if current_user.is_authenticated %}
+            <a href="/homepage" class="navbar-item">
+                Homepage
+            </a>
+            {% endif %}
+            {% if not current_user.is_authenticated %}
+            <a href="/login" class="navbar-item">
+                Login
+            </a>
+            <a href="/signup" class="navbar-item">
+                Sign Up
+            </a>
+            {% endif %}
+            {% if current_user.is_authenticated %}
+            <a href="/logout" class="navbar-item">
+                Logout
+            </a>
+            {% endif %}
+        </div>
+    </div>
+
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            <div class="single-hero-item set-bg"
+                 data-setbg="{{ url_for('static', filename='img/hero-slider/background.jpg') }}">
+                {% block content %}
+                {% endblock %}
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+
+</html>

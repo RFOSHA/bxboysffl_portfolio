@@ -1,0 +1,49 @@
+{% extends "temp.html" %}
+
+{% block content %}
+<body>
+<header class="header-section">
+    <div class="container-fluid">
+        <div class="logo">
+            <a href="./index.html">
+                <img src="{{ url_for('static', filename='img/bxboyslogo.png') }}" alt="">
+            </a>
+        </div>
+    </div>
+</header>
+<section class="hero-section">
+
+    <div class="single-hero-item set-bg"
+         data-setbg="{{ url_for('static', filename='img/login2.jpg') }}">
+        <div class="row">
+            <div class="leave-comment-form">
+                <form action="" method="post">
+                    <div class="row">
+                        <div class="container-fluid" align="center">
+                            <h4>Login</h4>
+                            <input type="text" class="form-control" placeholder="Email" name="email"
+                                   value="{{request.form.email}}" size="40">
+                            <input type="password" class="form-control" placeholder="Password"
+                                   name="password" value="{{request.form.password}}">
+                            <button type="submit" class="leave-btn">Login</button>
+
+                            <div>{% with messages = get_flashed_messages() %}
+                                {% if messages %}
+                                <ul class=flashes>
+                                    {% for message in messages %}
+                                    <div class="alert alert-dark" role="alert">{{ message }}</div>
+                                    {% endfor %}
+                                </ul>
+                                {% endif %}
+                                {% endwith %}
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+
+{% endblock %}

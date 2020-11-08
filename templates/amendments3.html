@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Activitar Template">
+    <meta name="keywords" content="Activitar, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>D'EM BX BOYS</title>
+    <style>
+        table {border-collapse:collapse; table-layout:fixed; width:1200px; align:center;}
+    </style>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/elegant-icons.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/nice-select.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/slicknav.min.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
+</head>
+
+<body>
+<!-- Page Preloder -->
+<div id="preloder">
+    <div class="loader"></div>
+</div>
+
+<!-- Header Section Begin -->
+<header class="header-section header-normal">
+    <div class="container-fluid">
+        <div class="logo">
+            <a href="/homepage">
+                <img src="{{ url_for('static', filename='img/bxboyslogo.png') }}" alt="" width="100%" height="100%">
+            </a>
+        </div>
+        <!--<div class="top-social">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='img/filler.png') }}" alt="" width="100%"
+                     height="100%">
+            </div>
+        </div>-->
+        <!--<div class="top-social">
+            <a href="#"><i class="fa fa-pinterest-p"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-pinterest-p"></i></a>
+            <a href="#"><i class="fa fa-youtube-play"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>-->
+        <div class="container">
+            <div class="nav-menu">
+                <nav class="mainmenu mobile-menu">
+                    <ul>
+                        <!--<li><a href="/tests">Test</a></li>-->
+                        <li><a href="/draft">2020 Draft</a></li>
+                        <li><a href="/bylaws">By Laws</a>
+                            <ul class="dropdown">
+                                <li><a href="/bylaws">2019 By Laws</a></li>
+                                <li><a href="/amendments">2020 Amendments</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/freeparking">Free Parking</a></li>
+                        <li><a href="/bets">Side Bets</a></li>
+                        <li><a href="/stats">Stats</a>
+                            <ul class="dropdown">
+                                <li><a href="/lifetime_stats">Lifetime Stats</a></li>
+                                <li><a href="/matchup_analytics">Matchup Analytics</a></li>
+                                <li><a href="/historic_game_log">Historic Game Log</a></li>
+                            </ul>
+                        </li>
+                        <li><a>Admin</a>
+                            <ul class="dropdown">
+                                <li><a href="/change_password">Change Password</a></li>
+                                <li><a href="/site_requests">Site Requests</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div id="mobile-menu-wrap"></div>
+    </div>
+</header>
+<!-- Header End -->
+
+<!-- Breadcrumb Section Begin -->
+<section class="breadcrumb-section set-bg spad" data-setbg="{{ url_for('static', filename='img/header.jpg') }}">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcrumb-text">
+                    <h2>Bylaws</h2>
+                    <!--<div class="breadcrumb-controls">
+                        <a href="#"><i class="fa fa-home"></i> Home</a>
+                        <span>About Us</span>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Breadcrumb End -->
+
+
+<!-- Bylaw Amendment Section Begin -->
+<section class="trainer-section spad">
+    <div class="wrapper-editor">
+        <doctype html="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div>{% with messages = get_flashed_messages() %}
+                            {% if messages %}
+                            <ul class=flashes>
+                                {% for message in messages %}
+                                <div class="alert alert-dark" role="alert">{{ message }}
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span></button>
+                                </div>
+                                {% endfor %}
+                            </ul>
+                            {% endif %}
+                            {% endwith %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title">
+                            <h2>2020 Proposals</h2>
+                            {{ table }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <br>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title">
+                            <!--<h2>New Proposals</h2>-->
+                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                    data-target=".bd-example-modal-lg" id="edit{{item}}">New Proposal
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% from "form_helpers.html" import render_field %}
+            <!--<form method="post">
+                <dl>
+                    {{ render_field(form.proposal_name) }}
+                    {{ render_field(form.proposal_manager) }}
+                    {{ render_field(form.proposal_text) }}
+                    {{ render_field(form.proposal_season) }}
+                    {{ render_field(form.proposal_status) }}
+                </dl>
+                <p><input type="submit" value="Submit">
+                </p>
+            </form>-->
+
+            <!--MODAL1-->
+            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
+                 aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Submit a Proposal</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="leave-comment-form">
+                            <!--<p>Complete the form below for each proposal</p><br>-->
+                            <br>
+                            <form action="#" method="post">
+                                <div class="row">
+                                    <div class="container-fluid">
+                                        <div class="col-lg-12">
+                                            <input type="text" placeholder="Amendment Title"
+                                                   name="amendmentTitle"
+                                                   value="{{request.form.amendmentTitle}}">
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <input type="text" placeholder="Manager Name"
+                                                   name="managerName"
+                                                   value="{{request.form.managerName}}">
+                                        </div>
+                                        <div class="col-lg-12">
+                                                            <textarea placeholder="Proposed Amendment" name="amendment"
+                                                                      value="{{request.form.amendment}}"></textarea>
+                                        </div>
+                                        <div class="col-lg-12" align="center">
+                                            <button type="submit" class="leave-btn">Post Comment
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--MODAL2-->
+            <!--<div class="modal fade bd-example-modal-lg_edit" tabindex="-1" role="dialog"
+                 aria-labelledby="myLargeModalLabel" aria-hidden="true" data-target="#edit{{item}}">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle_edit">Submit a Proposal</h5>
+                            <button type="button" class="close" data-dismiss="modal"
+                                    aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="leave-comment-form">
+                            <p>Complete the form below for each proposal</p><br>
+                            <form method="post">
+                                <dl>
+                                    {{ render_field(form.proposal_name) }}
+                                    {{ render_field(form.proposal_manager) }}
+                                    {{ render_field(form.proposal_text) }}
+                                    {{ render_field(form.proposal_season) }}
+                                    {{ render_field(form.proposal_status) }}
+                                </dl>
+                                <p><input type="submit" value="Submit">
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>-->
+        </doctype>
+
+    </div>
+</section>
+<!-- Bylaw Amendment Section End -->
+
+<!-- Footer Section Begin -->
+<footer class="footer-section">
+    <!--<div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="footer-logo-item">
+                    <div class="f-logo">
+                        <a href="#"><img src="{{ url_for('static', filename='img/logo.png') }}" alt=""></a>
+                    </div>
+                    <p>Despite growth of the Internet over the past seven years, the use of toll-free phone numbers
+                        in television advertising continues.</p>
+                    <div class="social-links">
+                        <h6>Follow us</h6>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 offset-lg-1">
+                <div class="footer-widget">
+                    <h5>Our Blog</h5>
+                    <div class="footer-blog">
+                        <a href="#" class="fb-item">
+                            <h6>Most people who work</h6>
+                            <span class="blog-time"><i class="fa fa-clock-o"></i> Jan 02, 2019</span>
+                        </a>
+                        <a href="#" class="fb-item">
+                            <h6>Freelance Design Tricks How </h6>
+                            <span class="blog-time"><i class="fa fa-clock-o"></i> Jan 02, 2019</span>
+                        </a>
+                        <a href="#" class="fb-item">
+                            <h6>have a computer at home have had </h6>
+                            <span class="blog-time"><i class="fa fa-clock-o"></i> Jan 02, 2019</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <div class="footer-widget">
+                    <h5>Program</h5>
+                    <ul class="workout-program">
+                        <li><a href="#">Bodybuilding</a></li>
+                        <li><a href="#">Running</a></li>
+                        <li><a href="#">Streching</a></li>
+                        <li><a href="#">Weight Loss</a></li>
+                        <li><a href="#">Gym Fitness</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="footer-widget">
+                    <h5>Get Info</h5>
+                    <ul class="footer-info">
+                        <li>
+                            <i class="fa fa-phone"></i>
+                            <span>Phone:</span>
+                            (12) 345 6789
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope-o"></i>
+                            <span>Email:</span>
+                            Colorlib.info@gmail.com
+                        </li>
+                        <li>
+                            <i class="fa fa-map-marker"></i>
+                            <span>Address</span>
+                            Iris Watson, Box 283 8562, NY
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>-->
+    <div class="copyright-text">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="ct-inside">
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+                        All rights reserved | This template is made with <i class="fa fa-heart-o"
+                                                                            aria-hidden="true"></i> by <a
+                            href="https://colorlib.com" target="_blank">Colorlib</a>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer Section End -->
+
+<!-- Js Plugins -->
+<script src="{{ url_for('static', filename='js/jquery-3.3.1.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.magnific-popup.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/mixitup.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.nice-select.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.slicknav.js') }}"></script>
+<script src="{{ url_for('static', filename='js/owl.carousel.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/masonry.pkgd.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+<script src="{{ url_for('static', filename='js/mdbEditor.js') }}"></script>
+<script src="{{ url_for('static', filename='js/wrapperEditor.js') }}"></script>
+</body>
+
+</html>
